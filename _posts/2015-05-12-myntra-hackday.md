@@ -41,7 +41,7 @@ We had three talks:
 
 ![](http://i.imgur.com/YLJpYGEl.jpg)
 
-We had an amazing team judge the teams (from left to right):
+We had an amazing panel judge the teams (from left to right):
 
 * Amit Somani - Ex CPO, MakeMyTrip
 * Amod Malviya - CTO, Flipkart
