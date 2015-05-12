@@ -41,10 +41,10 @@ We had three talks:
 
 ![](http://i.imgur.com/YLJpYGEl.jpg)
 
-We had an amazing jury consisting of:
+We had an amazing team judge the teams (from left to right):
 
-* Amod Malviya - CTO, Flipkart
 * Amit Somani - Ex CPO, MakeMyTrip
+* Amod Malviya - CTO, Flipkart
 * Shamik Sharma - CTO, Myntra
 * Pramod Varma - Chief Architect, Unique Identification Authority of India
 
