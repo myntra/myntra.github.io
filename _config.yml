@@ -7,7 +7,7 @@ relative_permalinks: true
 # Setup
 title:               Myntra Engineering
 tagline:             Stories of code.
-url:                 http://engineering.myntra.com
+url:                 http://myntra.github.io
 paginate:            10
 baseurl:             ""
 
