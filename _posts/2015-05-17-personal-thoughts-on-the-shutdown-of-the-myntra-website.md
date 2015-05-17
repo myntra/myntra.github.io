@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Personal thoughts on the shutdown of the myntra.com website
+author: sunilpai
 ---
 
 *[Note: My name's Sunil Pai. I work as a UI architect in myntra. I wrote this as an internal post to myntra engineering, and they're nice enough to let me share it with you. I've only edited some gramar and semantics. Giant disclaimer that I had no say in the company's decision to go app-only, but read on for my opinion on it.]*

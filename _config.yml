@@ -28,3 +28,13 @@ author:
 version:             1.0.0
 github:
   repo:              https://github.com/poole/poole
+
+# Authors
+authors:
+  sunilpai:
+    display_name: Sunil Pai
+    gravatar: 6eadce66e218b83b484c5e1ee293f5b9
+    email: 
+    web: 
+    twitter: threepointone
+    github: threepointone
