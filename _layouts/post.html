@@ -6,7 +6,9 @@ layout: default
 	<h1 class="post-title">{{ page.title }}</h1>
 	{% assign author = site.authors[page.author] %}
 	<div class="meta">
-		<img src="http://www.gravatar.com/avatar/{{ author.gravatar }}?s=40">
+			{% if author.gravatar %}
+				<img src="http://www.gravatar.com/avatar/{{ author.gravatar }}?s=40">
+			{% endif %}
 		<span class="author">{{ author.display_name }}</span>
 	</div>
 	<time datetime="{{ page.date | date_to_xmlschema }}" class="post-date">{{ page.date | date_to_string }}</time>
