@@ -20,7 +20,7 @@
   <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ site.baseurl }}/public/apple-touch-icon-precomposed.png">
   <link rel="shortcut icon" href="{{ site.baseurl }}/public/favicon.ico">
 
-  <!-- RSS -->
+  <!-- RSS -->	
   <link rel="alternate" type="application/atom+xml" title="{{ site.title }}" href="{{ site.baseurl }}/atom.xml">
   
   <!-- OG Tags -->
@@ -46,6 +46,11 @@
   {% if page.date %}
     <meta content="{{ page.date | date_to_xmlschema }}" property="article:published_time">
     <meta content="{{ site.url }}/about/" property="article:author">
+  {% endif %}
+  {% if page.image %}
+    <meta content="/img/srcset/{{ page.image }}" property="og:image">
+  {% else %}
+    <meta content="{{ site.url }}/public/logo.png" property="og:image">
   {% endif %}
   {% if page.categories %}
     {% for category in page.categories limit:1 %}
