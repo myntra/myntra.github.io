@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Customising an iOS UICollectionView Layout
+author: paramaggarwal
 ---
 
 Introduced in iOS 6, `UICollectionView` is a more powerful extension of `UITableView`. While a table view only allows you to layout rows vertically - the number of different interactions that can be implemented with a collection view are huge. You could make a carousel, a gallery or even a circular layout of objects. And its all thanks to the fact that you can create your own custom layout logic for the items in the collection.
