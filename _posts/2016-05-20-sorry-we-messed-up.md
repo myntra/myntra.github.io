@@ -7,13 +7,13 @@ description: Yesterday we unintentionally inundated many of your phones with not
 
 Yesterday we unintentionally inundated many of your phones with notifications.  We messed up and owe you an explanation of what happened and what we are doing to ensure it doesn’t happen again.
 
-#####What happened
+<h5>What happened</h5>
 
 On Thursday, May 19, at around 2:00 pm, the notifications team updated our fleet of notification servers with a code change. It took about 3 minutes for the deployment systems to update all our notification servers with the change.
 
 Within minutes of the code-push, our users, including several employees started reporting that they were getting bombarded with notifications, unrelated to their interactions with Myntra.  The team immediately stopped our notification systems and started to troubleshoot. However, within that short period, a lot of notifications had already been sent.  We did cancel a lot of the notifications that were en-route, but unfortunately by then a lot of our customers had already received them.
 
-#####Why it happened
+<h5>Why it happened</h5>
 
 After shutting down the notification sending systems, the team worked on reviewing why the error had occurred. We realized that the problem was not with the new code base - which had been tested independently -  but with how it was deployed. 
 
@@ -23,7 +23,7 @@ When we deployed our new code, there was a short  period (2 min 37 sec) when the
 
 Notification messages that went through the system during this intermediate state, became untargeted notifications (ie. did not have any userids). This resulted in them being broadcast to a very large set of users. 
 
-#####What we have learnt
+<h5>What we have learnt</h5>
 
 There were several causes of the problem - a shortcoming in the deployment model of our notification systems - all incoming notifications should be stopped and older notifications should be flushed out before a new codebase is deployed.   We should also have had more stringent checks in the code -  notifications missing a recipient list should be held back and subject to more checks and the number of notifications that any user can get in a short time-period should be more stringently capped.  Over the last 24 hours, we have already added some of these checks and will be adding more.
 
